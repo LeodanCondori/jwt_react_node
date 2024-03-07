@@ -1,0 +1,15 @@
+SHOW DATABASES;
+
+USE mydatabase;
+
+CREATE TABLE login (
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(50) NOT NULL,
+  PRIMARY KEY (username, password)
+);
+
+INSERT INTO login(username,password) VALUES
+  ('usuario1','clave1'),
+  ('usuario2','clave2'),
+  ('usuario3','clave3'),
+  ('usuario4','clave4');
